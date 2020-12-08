@@ -1,10 +1,10 @@
 const Potion = require('../lib/Potion.js');
 
-test('gets a description of the enemy', () => {
-	const enemy = new Enemy('goblin', 'sword');
+test('creates a health potion object', () => {
+	const potion = new Potion('health');
 
-	expect(enemy.getDescription()).toEqual(expect.stringContaining('goblin'));
-	expect(enemy.getDescription()).toEqual(expect.stringContaining('sword'));
+	expect(potion.name).toBe('health');
+	expect(potion.value).toEqual(expect.any(Number));
 });
 
 test('creates a random potion object', () => {
