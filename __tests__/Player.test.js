@@ -8,6 +8,7 @@ console.log(new Potion());
 
 const Player = require('../lib/Player');
 
+//this tests agains the consructor of the player
 test('creates a player object', () => {
 	const player = new Player('Dave');
 
